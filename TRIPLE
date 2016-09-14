@@ -1,0 +1,10 @@
+Toy Reduced Interpreter Programming Language: .3pl
++:
+  __restart__ construct for stackless tail recursion and loops
+  functions
+
+Toy Reduced Interpreter Programming Language Extended: .3ple
++:
+  syntax sugar sets
+#!/usr/bin/triple -S pythonic
+

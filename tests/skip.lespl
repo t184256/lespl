@@ -1,0 +1,3 @@
+load skip ( something really inevaluatable )
+load io stdout print ( load str new OK )
+-> OK

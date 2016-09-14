@@ -1,0 +1,6 @@
+load context set 1 ( load int new 1 )
+load context set 4 ( load int new 4 )
+load io stdout print (
+ load flow if ( 1 equals 4 ) ( load str new eq ) ( load str new neq )
+)
+-> neq

@@ -1,0 +1,2 @@
+load io stdout print ( load native_example )
+-> 1

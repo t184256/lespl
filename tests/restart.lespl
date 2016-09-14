@@ -1,0 +1,12 @@
+load context set pr ( load io stdout print )
+
+load context set r ( load int new 0 )
+load context set i ( load int new 0 )
+load context set to ( load int new 4 )
+
+pr (
+ load context set r ( r add i )
+ load context set i ( i add ( load int new 1 ) )
+ load restart ( i equals to not ) r
+)
+-> 6

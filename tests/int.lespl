@@ -1,0 +1,10 @@
+load io stdout print ( load int new 3 )
+-> 3
+
+load io stdout print ( load int new 3 add ( load int new 4 negate ) negate )
+-> 1
+
+load context set 4 ( load int new 4 )
+load io stdout print ( 4 add 4 )
+-> 8
+

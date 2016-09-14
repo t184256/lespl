@@ -1,0 +1,4 @@
+load io stdout print (
+ load str new 1234 reverse concatenate ( load str new abc ) reverse
+)
+-> cba1234

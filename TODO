@@ -1,0 +1,23 @@
+() -> ident
+equals -> equal
+
+SYNTAX:
+spaces around braces
+'a' -> ( quotebase16 decode A8 )
+4 -> ( int new 4 )
+
+a = d -> ( context with 'a' d )
+a.b.c -> ( ( obj get ( obj get a 'b' ) 'c' ) )
+{x|x add x} -> ( function create x ( x add x ) )
+[3] -> ( list new add 3 )
+[1, 2, 3] -> ( list new add 1 add 2 add 3 )
+[l:a | a add 1] -> ( l map function create a ( a add 1 ) )
+[l:a ? a equals 3] -> ( l filter ( function create a { a equals 3 } ) )
+  ( and any combinations of these )
+  [l:a | a greater 1 | a less 5]
+  [l:a ? a add 1 | a equals 3]
+  [l:a ? a equals 3 | a add 1 ? a equals 4]
+
+# one day
+a.b.c = d -> ( obj set a 'b' ( obj set ( obj get a b ) 'c' d
+[1..2] -> ( list from 1 to 2 )

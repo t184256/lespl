@@ -1,0 +1,27 @@
+load context set hi ( load str new hello )
+load io stdout print hi
+-> hello
+
+load context set pr ( load io stdout print )
+pr hi
+-> hello
+
+(
+ load context set hi ( load str new Greetings! )
+ pr hi
+)
+-> Greetings!
+
+pr hi
+-> hello
+
+(
+ load context set load ( load str new load_overridden )
+ pr load
+ ( pr ( load ) )
+)
+-> load_overridden
+-> load_overridden
+
+pr ( load str new load_is_normal_again )
+-> load_is_normal_again

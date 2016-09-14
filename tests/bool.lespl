@@ -1,0 +1,28 @@
+load context set pr ( load io stdout print )
+load context set s ( load str new something )
+load context set t ( load bool true )
+load context set f ( load bool )
+
+pr ( f or t or f )
+-> true
+
+pr ( t and t and f )
+-> false
+
+pr ( f or s )
+-> something
+
+pr ( t or s )
+-> true
+
+pr ( f and s )
+-> false
+
+pr ( t and s )
+-> something
+
+pr ( t xor s )
+-> false
+
+pr ( f xor s )
+-> something
